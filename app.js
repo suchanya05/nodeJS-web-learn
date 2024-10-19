@@ -16,8 +16,8 @@ app.use(morgan('combined'));
 app.set("views","./src/views")
 app.set("view engine" , "ejs")
 
-
-app.use("/products", productsRouter)
+//ทำงานที productsRouter
+app.use("/products", productsRouter) 
 
 app.get("/", (req,res)=>{
 
